@@ -1,136 +1,247 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-* 
+* {
+  margin: 0%;
+}
 
 .container {
-
-    width: 510px;
-    height: 1139px;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-items: center;
 }
 
-header { background-image: url("images/Rectangle 1 (1).png");
-    width: 510px;
-    height: 576px
-    
-
+.fisherman {
+  max-width: 100%;
+  height: 100vh;
+  max-height: 576px;
+  background-image: url('images/Rectangle 1 (1).png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2em;
 }
 
-h1 { 
-   
-    padding: 0 1em;
-    font-family: Bebas Neue;
-    font-size: 64px;
-    font-weight: 400;
-    line-height: 77px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #FFFFFF;
-    
-    
+h1 {
+  padding: 0 3%;
+  padding-top: 4.8%;
+  font-family: Bebas Neue, Open Sans, sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 77px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #fff;
+  justify-content: center;
+  margin-top: 0%;
+}
 
-     }
-     
-     p { 
-        padding: 0 2em;
-        font-family: Poppins;
-        font-size: 24px;
-        font-weight: 500;
-        line-height: 36px;
-        letter-spacing: 0em;
-        text-align: center;
-        color: #FFFFFF;         
-    }
+p {
+  padding: 0 4%;
+  padding-top: 12%;
+  font-family: Poppins, Open Sans, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #fff;
+}
 
 .content {
-    width: 510px;
-    height: 576px;
-    justify-content: center;
-    flex-direction: column;
+  max-width: 100%;
+  height: 100vh;
+  max-height: 563px;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding: 0 2em;
+}
+
+.fish-hook1 > h2 {
+  font-family: Poppins, Open Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0;
+  text-align: left;
+  margin: 14.94px 0;
+}
+
+.fish-hook1 > input[type="name"] {
+  background-color: #ededed;
+  border: 1px solid #c7c7c7;
+  width: 427px;
+  height: 65px;
+  top: 845px;
+  left: 41px;
+  margin-bottom: 2em;
+}
+
+.fish-hook2 > h3 {
+  font-family: Poppins, Open Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0;
+  text-align: left;
+  margin: 14.94px 0;
+}
+
+.fish-hook2 > input[type="email"] {
+  background-color: #ededed;
+  border: 1px solid #c7c7c7;
+  width: 427px;
+  height: 65px;
+  top: 845px;
+  left: 41px;
+  margin-bottom: 2em;
+}
+
+.fish-hook3 > input[type="submit"] {
+  background: #5200ff;
+  width: 427px;
+  height: 65px;
+  top: 845px;
+  left: 41px;
+  font-family: Poppins, Open Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #fff;
+  margin-top: 8%;
+  max-height: 563px;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding: 0 2em;
+  margin-bottom: 2em;
+}
+
+@media (min-width: 770px) {
+  .fisherman {
+    background-image: url('images/Rectangle\ 2.png');
+  }
+
+  h1 {
+    padding: 0 5%;
+    padding-top: 4.8%;
+  }
+
+  p {
+    margin-top: -6%;
+  }
+
+  .content {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 770px;
+    max-height: 375px;
+    padding: 0 8%;
+  }
+
+  .fish-hook1,
+  .fish-hook2 {
+    margin-top: 5%;
+  }
+
+  .fish-hook1 > input[type="name"] {
+    max-width: 303px;
+    max-height: 65px;
+    margin-bottom: 3%;
+  }
+
+  .fish-hook2 > input[type="email"] {
+    max-width: 303px;
+    max-height: 65px;
+    margin-bottom: 3%;
+  }
+
+  .fish-hook3 > input[type="submit"] {
+    width: 187px;
+    height: 63px;
+    margin-top: 4%;
+  }
+}
+
+@media (min-width: 1260px) {
+  .container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    
-    
+    flex-flow: row wrap;
+    padding: 0 0;
+    margin: 0 0;
+  }
 
-     
+  .fisherman {
+    width: 100%;
+    max-width: 631px;
+    height: 100vh;
+    max-height: 846px;
+    background-image: url('images/Rectangle\ 1.jpg');
+    padding: 0 0;
+  }
+
+  h1 {
+    text-align: right;
+    padding-right: 16.2%;
+    align-items: center;
+    padding-top: 27%;
+    padding-left: 20%;
+    margin-bottom: 1%;
+  }
+
+  p {
+    text-align: right;
+    padding-right: 16.2%;
+    align-items: center;
+    padding-top: 8%;
+    padding-left: 20%;
+  }
+
+  .content {
+    width: 100%;
+    height: 100%;
+    max-width: 629px;
+    max-height: 846px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    padding: 0%;
+    margin-bottom: 5%;
+  }
+
+  .fish-hook1 {
+    margin-bottom: 0.5%;
+  }
+
+  .fish-hook2 {
+    margin-top: 3%;
+  }
+
+  .fish-hook1 > input[type="name"] {
+    max-width: 422px;
+    max-height: 65px;
+    padding: 0 0;
+    margin: 0 0 0;
+  }
+
+  .fish-hook2 > input[type="email"] {
+    max-width: 422px;
+    max-height: 65px;
+    padding: 0 0;
+    margin: 0 0 0;
+  }
+
+  .fish-hook3 {
+    width: 183px;
+    height: 63px;
+    padding-top: 6%;
+    padding-right: 38.5%;
+  }
 }
-  
-.fish-hook > h2 { 
-    font-family: Poppins;
-font-size: 18px;
-font-weight: 500;
-line-height: 27px;
-letter-spacing: 0em;
-text-align: left;
-
-
- }
-
-.fish-hook > input[type="name"] {
-    background: linear-gradient(0deg, #C7C7C7, #C7C7C7),
-linear-gradient(0deg, #EDEDED, #EDEDED);
-
-    border: 1px solid #C7C7C7;
-    width: 427px;
-    height: 65px;
-    top: 845px;
-    left: 41px;
-    border: 1px;
-    margin-bottom: 2em;
-    
-
-     }
-
-     .fish-hook > h3 { 
-        font-family: Poppins;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 27px;
-    letter-spacing: 0em;
-    text-align: left;
-    
-
-    
-     }
-.fish-hook > input[ type="email"] {
-    
-    background: linear-gradient(0deg, #C7C7C7, #C7C7C7), linear-gradient(0deg, #EDEDED, #EDEDED);
-    ;
-    border: 1px solid #C7C7C7;
-    width: 427px;
-    height: 65px;
-    top: 845px;
-    left: 41px;
-    border: 1px;
-  
-    
-
-}
-.fish-hook2 > input[ type="submit"] {
-    background: #5200FF;
-    width: 427px;
-    height: 65px;
-    top: 845px;
-    left: 41px;
-    font-family: Poppins;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 27px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #FFFFFF;
-    margin-top: 4.3em;
-    
-  
-     
-}
-
-
-    
-     
-

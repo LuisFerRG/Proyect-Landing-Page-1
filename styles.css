@@ -99,3 +99,47 @@ h2 {
   align-items: center;
   max-height: 563px;
 }
+
+@media (min-width: 770px) {
+  .fisherman {
+    width: 100vw;
+    background-image: url('images/Rectangle2.png');
+  }
+
+  h1 {
+    max-width: 500px;
+    padding: 0 1.6em;
+    padding-top: 1.7em;
+  }
+
+  p {
+    max-width: 600px;
+    padding-top: 2.6em;
+  }
+
+  .content {
+    max-width: 770px;
+    max-height: 375px;
+    padding: 0 3.5em;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .fish-hook1,
+  .fish-hook2 {
+    margin-top: 2.5em;
+  }
+
+  .fish-hook1 > input[type="name"],
+  .fish-hook2 > input[type="email"] {
+    max-width: 303px;
+    max-height: 65px;
+    margin-bottom: 1.5em;
+  }
+
+  .fish-hook3 > input[type="submit"] {
+    width: 187px;
+    height: 63px;
+    margin-top: 1em;
+  }
+}

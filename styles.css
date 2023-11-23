@@ -102,8 +102,6 @@ h2 {
 }
 
 @media (min-width: 770px) {
-  
-  
   .fisherman {
     width: 100vw;
     background-image: url('images/Rectangle2.png');
@@ -141,7 +139,7 @@ h2 {
   }
 
   .fish-hook3 {
-   margin-left: 1.3em;
+    margin-left: 1.3em;
   }
 
   .fish-hook3 > input[type="submit"] {
@@ -220,7 +218,5 @@ h2 {
     padding-top: 2.5em;
     padding-right: 15em;
     margin-left: 6.4em;
-
-    
   }
 }

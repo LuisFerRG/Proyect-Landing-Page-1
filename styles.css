@@ -102,6 +102,8 @@ h2 {
 }
 
 @media (min-width: 770px) {
+  
+  
   .fisherman {
     width: 100vw;
     background-image: url('images/Rectangle2.png');
@@ -119,9 +121,9 @@ h2 {
   }
 
   .content {
-    max-width: 770px;
+    max-width: 700px;
     max-height: 375px;
-    padding: 0 3.5em;
+    padding: 0 2em;
     flex-flow: row wrap;
     justify-content: space-between;
   }
@@ -136,6 +138,10 @@ h2 {
     max-width: 303px;
     max-height: 65px;
     margin-bottom: 1.5em;
+  }
+
+  .fish-hook3 {
+   margin-left: 1.3em;
   }
 
   .fish-hook3 > input[type="submit"] {
@@ -213,5 +219,8 @@ h2 {
     height: 63px;
     padding-top: 2.5em;
     padding-right: 15em;
+    margin-left: 6.4em;
+
+    
   }
 }
